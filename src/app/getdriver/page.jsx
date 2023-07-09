@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Main = () => {
     return (
         <div>
             <section class="">
@@ -44,4 +44,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Main

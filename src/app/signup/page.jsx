@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = () => {
+const Main = () => {
     return (
         <div>
 
@@ -151,5 +151,5 @@ const page = () => {
     )
 }
 
-export default page
+export default Main
    
