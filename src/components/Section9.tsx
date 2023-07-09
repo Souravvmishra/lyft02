@@ -24,11 +24,11 @@ const Section9: React.FC = () => {
   return (
     <div className="px-28 py-20 overflow-clip -mx-40 bg-[#F4F4FA] ">
       <div className="flex justify-center items-center flex-col space-y-4">
-        <div>
+        <div className='flex space-x-2 scale-75 justify-center items-center'>
           {/* <Image src={'http://images.ctfassets.net/q8mvene1wzq4/3WkSLIffcV7OYpUgMpBwJ7/6951147bed1e0844f7eeeb9785cf84ba/Lyft_Business_Pink.svg?w=&q=60&fm='} width={1080} height={250} alt='logo' /> */}
           {/* CAN NOT GET THIS IMAGE  */}
           <svg
-            fill="currentColor"
+            fill="#EC4899"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 72 50"
             aria-labelledby="lyft-logo"
@@ -41,6 +41,9 @@ const Section9: React.FC = () => {
               <path d="M26.89 11.137v15.537c0 .883-.746 1.597-1.667 1.597-.92 0-1.667-.714-1.667-1.597V11.137H12.759V29.41c0 3.288 1.137 7.445 6.31 8.799 5.18 1.355 8.185-1.45 8.185-1.45-.274 1.848-2.049 3.201-4.909 3.491-2.164.22-4.93-.483-6.31-1.063v9.681c3.517 1.017 7.236 1.345 10.877.653 6.606-1.257 10.775-6.671 10.775-13.874v-24.51H26.891z"></path>
             </g>
           </svg>
+          <div className='text-4xl font-sans  font-bold '>
+            business
+          </div>
         </div>
         <div className="text-3xl font-semibold">We Help Move</div>
         <ListComponent items={items} />
