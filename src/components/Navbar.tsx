@@ -11,11 +11,11 @@ const Navbar: React.FC = () => {
             <div>
                 <ul className='flex justify-center items-center space-x-6 font-semibold text-base capitalize divide-x'>
                     <li className='h-20 px-1 flex justify-center items-center capitalize text-center'><BlueBtn text="Get a ride" /></li>
-                    <li className='h-20 px-[1px] flex items-center justify-center pl-8  '><a href="#">DRIVER</a></li>
-                    <li className='h-20 px-[1px] flex justify-center items-center pl-8'><a href="#">RIDER</a></li>
-                    <li className='h-20 px-[1px] flex justify-center items-center pl-8'><a href="#">BUSSINESS</a></li>
-                    <li className='h-20 px-[1px] flex justify-center items-center pl-8'><a href="#">LOG IN</a></li>
-                    <li className='h-20 px-[1px] flex justify-center items-center pl-8'><a href="#">SIGN UP</a></li>
+                    <li className='h-20 px-[1px] flex items-center justify-center pl-8 hover:text-blue-800  '><a href="#">DRIVER</a></li>
+                    <li className='h-20 px-[1px] flex justify-center items-center pl-8 hover:text-blue-800'><a href="#">RIDER</a></li>
+                    <li className='h-20 px-[1px] flex justify-center items-center pl-8 hover:text-blue-800'><a href="#">BUSSINESS</a></li>
+                    <li className='h-20 px-[1px] flex justify-center items-center pl-8 hover:text-blue-800'><a href="#">LOG IN</a></li>
+                    <li className='h-20 px-[1px] flex justify-center items-center pl-8 hover:text-blue-800'><a href="#">SIGN UP</a></li>
 
                 </ul>
             </div>

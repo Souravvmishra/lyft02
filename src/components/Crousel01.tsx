@@ -4,8 +4,14 @@ import Image from 'next/image';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
+interface Driver {
+    image: string;
+    name: string;
+    description: string;
+    since: number;
+}
 
-const drivers = [
+const drivers: Driver[] = [
     {
         image: 'https://images.ctfassets.net/q8mvene1wzq4/4XI9Rg1V0ZbIZyKFoTIxuf/a42d451ac25728bc83a6d5220915532b/harold_driver.png?w=300&q=60&fm=',
         name: "Harold",
@@ -32,12 +38,16 @@ const drivers = [
     }
 ];
 
+interface CardProps {
+    item: Driver;
+    index: number;
+    active: number;
+    setActive: React.Dispatch<React.SetStateAction<number>>;
+}
 
-
-const Card = ({ item, index, active, setActive }) => {
-
+const Card: React.FC<CardProps> = ({ item, index, active, setActive }) => {
     return (
-        <div className={` flex flex-col justify-center items-center space-y-6 space-x-8 ${(index - 1 + 4) % 4 === active ? 'opacity-100' : 'opacity-50'} cursor-pointer `}>
+        <div className={`flex flex-col justify-center items-center space-y-6 space-x-8 ${(index - 1 + 4) % 4 === active ? 'opacity-100' : 'opacity-50'} cursor-pointer`}>
             <div>
                 <Image className={`${(index - 1 + 4) % 4 === active ? 'scale-100' : 'scale-50'} transition-all duration-150`} src={item.image} width={75} height={75} alt='profile pic' />
             </div>
@@ -45,29 +55,27 @@ const Card = ({ item, index, active, setActive }) => {
                 “{item.description}”
             </div>
             <span>— {item.name}</span>
-            <div className='italic'>Driving with lyft since {item.since}</div>
+            <div className='italic'>Driving with Lyft since {item.since}</div>
         </div>
-    )
-}
+    );
+};
 
-const Crousel01 = () => {
-    const [active, setActive] = useState(0)
-
+const Crousel01: React.FC = () => {
+    const [active, setActive] = useState(0);
 
     return (
         <div className='py-20'>
-            <Slide slidesToScroll={1} slidesToShow={3} indicators={true} transitionDuration={300} cssClass='mx-12'
-                onChange={(from, to) => { setActive(to) }} >
+            <Slide slidesToScroll={1} slidesToShow={3} indicators={true} transitionDuration={300} cssClass='mx-12' onChange={(from, to) => { setActive(to) }}>
                 {drivers.map((item, i) => {
                     return (
                         <div key={i}>
                             <Card item={item} index={i} active={active} setActive={setActive} />
                         </div>
-                    )
+                    );
                 })}
             </Slide>
-        </div >
-    )
-}
+        </div>
+    );
+};
 
-export default Crousel01
+export default Crousel01;
