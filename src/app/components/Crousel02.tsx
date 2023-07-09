@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -7,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ item }) => {
   return (
-    <div className="text-black border flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 shadow-md cursor-pointer">
+    <div className="text-black flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 ">
       <Image src={item} width={150} height={175} alt="brand" />
     </div>
   );
@@ -28,7 +29,6 @@ const Crousel02: React.FC = () => {
   ];
 
   const move = () => {
-    console.log(right);
 
     if (right <= -18) {
       setRight(0);
@@ -39,7 +39,6 @@ const Crousel02: React.FC = () => {
     const crousel = window.document.getElementById('crousel02');
     if (crousel) {
       crousel.style.right = right + 'rem';
-      console.log(crousel.style.right);
     }
   };
 

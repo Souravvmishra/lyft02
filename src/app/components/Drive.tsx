@@ -73,7 +73,10 @@ const Drive: React.FC = () => {
             <div className='w-[40%]'>
                 <Image src={'https://images.ctfassets.net/q8mvene1wzq4/2qig3wGIPssGl5C9tS0Lrt/f68bb064f872385abc6e95606cb0794e/home_pinkpaint_driver.jpg?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
             </div>
+
         </div>
+
+
     );
 }
 
