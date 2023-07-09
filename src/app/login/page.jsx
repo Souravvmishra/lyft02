@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Main = () => {
-    return (
-        <div>
+const page = () => {
+  return (
+    <div>
 
 
             <div class="min-h-screen  p-0 sm:p-12">
@@ -148,8 +148,7 @@ const Main = () => {
 
             
         </div>
-    )
+  )
 }
 
-export default Main
-   
+export default page

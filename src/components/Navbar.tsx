@@ -14,12 +14,8 @@ const Navbar: React.FC = () => {
             if (window.scrollY > 125) { // if scrolled more than 25px
                 setShow(true); // update the state variable to true
             }
-            const currentScrollPos = window.scrollY ;
-
-            if (currentScrollPos > prevScrollPos) {
-                // Scrolling down
-                console.log('Scrolling down');
-            } else if (currentScrollPos < prevScrollPos) {
+            const currentScrollPos = window.scrollY;
+            if (currentScrollPos < prevScrollPos) {
                 // Scrolling up
                 setShow(false)
             }
