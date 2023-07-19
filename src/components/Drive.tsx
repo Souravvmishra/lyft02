@@ -4,12 +4,12 @@ import BlueBtn from './BlueBtn';
 
 const Drive: React.FC = () => {
     return (
-        <div className='-mx-40 bg-[#F4F4FA] py-20 flex '>
-            <div className='px-40 w-[60%] h-[420px] flex flex-col justify-evenly space-y-4'>
-                <div className='text-lg font-semibold'>
+        <div className='xl:-mx-40 bg-[#F4F4FA] py-20 flex flex-col-reverse xl:flex-row px-4 -mx-2'>
+            <div className='xl:px-40 xl:w-[60%] xl:h-[420px] flex flex-col justify-evenly space-y-4'>
+                <div className='text-lg font-semibold text-center'>
                     DRIVE WITH LYFT
                 </div>
-                <div className='text-3xl font-semibold'>
+                <div className='text-3xl font-semibold text-center'>
                     Set your own hours. Earn on your own terms.
                 </div>
                 <div className='flex space-x-2'>
@@ -58,9 +58,11 @@ const Drive: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex space-x-4'>
+                <div className='flex space-x-4 justify-center items-center flex-col md:flex-row'>
+                    <div className='scale-70 md:scale-100 mb-4'>
                     <BlueBtn text={`Apply to drive`} />
-                    <div className='flex space-x-2 justify-center items-center'>
+                    </div>
+                    <div className='flex space-x-2 justify-center items-center '>
                         <div>How driver pay works</div>
                         <span>
                             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
@@ -70,8 +72,8 @@ const Drive: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[40%]'>
-                <Image src={'https://images.ctfassets.net/q8mvene1wzq4/2qig3wGIPssGl5C9tS0Lrt/f68bb064f872385abc6e95606cb0794e/home_pinkpaint_driver.jpg?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
+            <div className='xl:w-[40%]   aspect-video overflow-hidden mb-10 mx-auto'>
+                <Image src={'https://images.ctfassets.net/q8mvene1wzq4/2qig3wGIPssGl5C9tS0Lrt/f68bb064f872385abc6e95606cb0794e/home_pinkpaint_driver.jpg?w=1500&q=60&fm=webp'} height={720}  width={1080} alt='main' />
             </div>
 
         </div>

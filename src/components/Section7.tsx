@@ -4,8 +4,8 @@ import BlueBtn from './BlueBtn';
 
 const Section7: React.FC = () => {
   return (
-    <div className="bg-[#F4F4FA] flex px-48 py-20 justify-between items-center space-x-24 -mx-40">
-      <div className="w-[50%]">
+    <div className="bg-[#F4F4FA] flex px-4 xl:px-48 py-20 justify-between items-center xl:space-x-24 -mx-40 flex-col space-y-4 xl:flex-row">
+      <div className="xl:w-[50%]">
         <Image
           src={'https://images.ctfassets.net/q8mvene1wzq4/3tEhujwTqY4G4LXZ0yZltF/c544aaffe54de76aacce746d9db34d9b/home_pinkpaint_safety.jpg?w=1500&q=60&fm=webp'}
           width={400}
@@ -15,7 +15,7 @@ const Section7: React.FC = () => {
       </div>
 
       <div className="w-[60%] flex flex-col justify-between space-y-4">
-        <div className="text-lg font-semibold">SAFETY FIRST</div>
+        <div className="text-lg font-semibold text-center">SAFETY FIRST</div>
 
         <div className="text-3xl font-semibold">Your safety comes first. Always.</div>
         <div>
@@ -23,7 +23,7 @@ const Section7: React.FC = () => {
           need to go. If you ever need it, we’re standing by, ready to help.
         </div>
 
-        <div className="flex space-x-4">
+        <div className="flex md:space-x-4 flex-col  items-center justify-center md:flex-row">
           <BlueBtn text={`Learn about safety`} />
           <div className="flex space-x-2 justify-center items-center font-semibold">
             <div>Community Guidelines</div>

@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
 
 const driverArray: string[] = [
   "Become a Driver",
@@ -49,12 +50,42 @@ const lyftArray: string[] = [
 ];
 
 const Footer: React.FC = () => {
+
+  const [driver, setDriver] = useState(false)
+  const [rider, setRider] = useState(false)
+  const [lyft, setLyft] = useState(false)
+
+
+  useEffect(() => {
+    const setTrue = () => {
+      setDriver(true)
+      setRider(true)
+      setLyft(true)
+    }
+
+    const setFalse = () => {
+      setDriver(false)
+      setRider(false)
+      setLyft(false)
+    }
+    window.innerWidth > 1280 ? setTrue() : setFalse();
+    window.addEventListener('resize', () => {
+        window.innerWidth > 1280 ? setTrue() : setFalse();
+    })
+}, [])
+
   return (
-    <div className='mx-40 py-10'>
-      <div className='flex justify-between'>
+    <div className=' px-4 xl:mx-40 py-10'>
+      <div className='flex justify-between flex-col xl:flex-row '>
         <div>
-          <div className='text-xl font-semibold pb-8'>Driver</div>
-          {driverArray.map((item) => {
+          <div className='flex justify-between items-center pb-8 mb-4 border-b-2 xl:border-b-0 ' onClick={() => setDriver(!driver)}>
+            <div className='text-xl font-semibold '>Driver</div>
+            <div className={`${driver ? 'rotate-180' : ''} xl:hidden`}>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.012 3.89 15 10.902l-1.208 1.208-5.78-5.78-5.78 5.78L1 10.902 8.012 3.89Z"></path></svg>
+            </div>
+          </div>
+
+          {driver && driverArray.map((item) => {
             return (
               <div className='pb-2 text-sm' key={item}>
                 {item}
@@ -63,8 +94,13 @@ const Footer: React.FC = () => {
           })}
         </div>
         <div>
-          <div className='text-xl font-semibold pb-8'>Rider</div>
-          {riderArray.map((item) => {
+          <div className='flex justify-between items-center pb-8 xl:border-b-0 border-b-2 mb-4' onClick={() => setRider(!rider)}>
+            <div className='text-xl font-semibold '>Rider</div>
+            <div className={`${rider ? 'rotate-180' : ''} xl:hidden`}>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.012 3.89 15 10.902l-1.208 1.208-5.78-5.78-5.78 5.78L1 10.902 8.012 3.89Z"></path></svg>
+            </div>
+          </div>
+          {rider && riderArray.map((item) => {
             return (
               <div className='pb-2 text-sm' key={item}>
                 {item}
@@ -73,8 +109,13 @@ const Footer: React.FC = () => {
           })}
         </div>
         <div>
-          <div className='text-xl font-semibold pb-8'>LYFT</div>
-          {lyftArray.map((item) => {
+          <div className='flex justify-between items-center pb-8 border-b-2 mb-4 xl:border-b-0 ' onClick={() => setLyft(!lyft)}>
+            <div className='text-xl font-semibold '>Lyft</div>
+            <div className={`${lyft ? 'rotate-180' : ''} xl:hidden`}>
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8.012 3.89 15 10.902l-1.208 1.208-5.78-5.78-5.78 5.78L1 10.902 8.012 3.89Z"></path></svg>
+            </div>
+          </div>
+          {lyft && lyftArray.map((item) => {
             return (
               <div className='pb-2 text-sm' key={item}>
                 {item}
@@ -82,7 +123,7 @@ const Footer: React.FC = () => {
             );
           })}
         </div>
-        <div className=''>
+        <div className='flex flex-col items-center justify-center'>
           <div className='mb-4'>
             <button className='w-36 px-2 rounded-full border text-black border-black py-1 hover:bg-slate-200'>
               Lyft driver app
@@ -95,7 +136,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-end space-x-4 '>
+      <div className='flex items-center justify-center my-4  space-x-4 flex-wrap'>
         <div className='text-xs underline'>
           <div>Terms</div>
         </div>

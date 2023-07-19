@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ item }) => {
   return (
-    <div className="text-black flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 ">
+    <div className="text-black flex flex-col w-44 h-44 px-6 rounded-xl items-center justify-center space-y-4 ">
       <Image src={item} width={150} height={175} alt="brand" />
     </div>
   );
@@ -33,8 +33,8 @@ const Crousel02: React.FC = () => {
     if (right <= -18) {
       setRight(0);
     }
-    if (right >= 2 * 54) {
-      setRight(2 * 54);
+    if (right >= 3 * 11*3) {
+      setRight(3 * 11*3);
     }
     const crousel = window.document.getElementById('crousel02');
     if (crousel) {
@@ -50,10 +50,14 @@ const Crousel02: React.FC = () => {
     <div>
       <div
         id="crousel02"
-        className={`relative right-0 overflow-hidden flex w-[300vw] py-20 space-x-4 transition-all duration-300 -mx-40 px-80`}
+        className={`relative right-0 overflow-hidden flex w-[800vw] py-20 space-x-4 transition-all duration-300 -mx-40 px-80`}
       >
         {data.map((item, index) => {
-          return <Card item={item} key={index} />;
+          return (
+            <div className='w-44 h-44'>
+              <Card item={item} key={index} />
+            </div>
+          )
         })}
       </div>
 
@@ -61,7 +65,7 @@ const Crousel02: React.FC = () => {
         <div className="carousel-button-container" style={{ width: '40px' }}>
           <div
             className={`${right === 0 ? 'scale-0' : ''} transition-all duration-300`}
-            onClick={() => setRight((r) => r - 54)}
+            onClick={() => setRight((r) => r - 11*3)}
           >
             <button className="border rounded-full p-2 border-slate-400 hover:bg-slate-200">
               <span className="sc-18fxrom-0 gjYzMx">
@@ -74,8 +78,8 @@ const Crousel02: React.FC = () => {
         </div>
         <div className="carousel-button-container" style={{ width: '40px' }}>
           <div
-            className={`${right === 2 * 54 ? 'scale-0' : ''} transition-all duration-300`}
-            onClick={() => setRight((r) => r + 54)}
+            className={`${right === 3 * 11 * 3 ? 'scale-0' : ''} transition-all duration-300`}
+            onClick={() => setRight((r) => r + 11*3)}
           >
             <button className="border rounded-full p-2 border-slate-400 hover:bg-slate-200">
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">

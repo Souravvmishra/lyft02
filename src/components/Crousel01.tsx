@@ -47,9 +47,9 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ item, index, active, setActive }) => {
     return (
-        <div className={`flex flex-col justify-center items-center space-y-6 space-x-8 ${(index - 1 + 4) % 4 === active ? 'opacity-100' : 'opacity-50'} cursor-pointer`}>
+        <div className={`flex flex-col justify-center items-center space-y-6 space-x-8 ${(index - 1 + 4) % 4 === active ? 'xl:opacity-100' : 'xl:opacity-50'} cursor-pointer`}>
             <div>
-                <Image className={`${(index - 1 + 4) % 4 === active ? 'scale-100' : 'scale-50'} transition-all duration-150`} src={item.image} width={75} height={75} alt='profile pic' />
+                <Image className={`${(index - 1 + 4) % 4 === active ? 'xl:scale-100' : 'xl:scale-50'} transition-all duration-150 `} src={item.image} width={75} height={75} alt='profile pic' />
             </div>
             <div className='text-lg text-center'>
                 “{item.description}”
@@ -62,10 +62,19 @@ const Card: React.FC<CardProps> = ({ item, index, active, setActive }) => {
 
 const Crousel01: React.FC = () => {
     const [active, setActive] = useState(0);
+    const [slides, setSlides] = useState(3);
+
+    useEffect(() => {
+        window.innerWidth > 1280 ? setSlides(3) : setSlides(1)
+        window.addEventListener('resize', () => {
+            window.innerWidth > 1280 ? setSlides(3) : setSlides(1)
+        })
+    }, [])
+
 
     return (
         <div className='py-20'>
-            <Slide slidesToScroll={1} slidesToShow={3} indicators={true} transitionDuration={300} cssClass='mx-12' onChange={(from, to) => { setActive(to) }}>
+            <Slide slidesToScroll={1} slidesToShow={slides} indicators={true} transitionDuration={300} cssClass='mx-12' onChange={(from, to) => { setActive(to) }}>
                 {drivers.map((item, i) => {
                     return (
                         <div key={i}>

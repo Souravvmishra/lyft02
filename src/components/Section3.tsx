@@ -4,12 +4,12 @@ import BlueBtn from './BlueBtn';
 
 const Ride: React.FC = () => {
   return (
-    <div className=' py-20 flex '>
-      <div className=' w-[60%] h-[420px] px-28 flex flex-col justify-evenly space-y-4'>
-        <div className='text-lg font-semibold'>
+    <div className=' py-20 flex items-center justify-center flex-col-reverse md:flex-row'>
+      <div className=' md:w-[60%] h-[420px] px-4 md:px-28 flex flex-col justify-evenly space-y-4'>
+        <div className='text-lg font-semibold text-center'>
           RIDE WITH LYFT
         </div>
-        <div className='text-3xl font-semibold'>
+        <div className='text-3xl font-semibold text-center'>
           Ready, set, go
           in just a few quick taps
         </div>
@@ -56,10 +56,10 @@ const Ride: React.FC = () => {
           </div>
         </div>
 
-        <div className='flex space-x-4'>
+        <div className='flex space-x-4 flex-col md:flex-row'>
           <BlueBtn text={`Get a ride`} />
           <div className='flex space-x-2 justify-center items-center'>
-            <div>Learn more about riding with Lyft</div>
+            <div className='mt-4'>Learn more about riding with Lyft</div>
             <span>
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                 <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z"></path>
@@ -69,7 +69,7 @@ const Ride: React.FC = () => {
         </div>
       </div>
 
-      <div className='w-[40%]'>
+      <div className='md:w-[40%]'>
         <Image src={'https://images.ctfassets.net/q8mvene1wzq4/2R3M8S6ZIA7SXbMsCkxvMI/01d24491659f6678df39d245e080045d/rider_stylized_text_image.png?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
       </div>
     </div>

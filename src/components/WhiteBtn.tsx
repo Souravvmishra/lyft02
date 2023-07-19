@@ -8,7 +8,7 @@ interface WhiteBtnProps {
 const WhiteBtn: React.FC<WhiteBtnProps> = ({ text, children }) => {
   return (
     <div>
-      <button className='bg-white hover:bg-slate-100 rounded-full shadow-lg text-black  px-6 py-[0.8rem]'>
+      <button className='bg-white hover:bg-slate-100 rounded-full shadow-lg text-black  px-6 py-[0.8rem] m-2'>
         {text}
         {children}
       </button>

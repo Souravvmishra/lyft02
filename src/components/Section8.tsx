@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Section8: React.FC = () => {
   return (
-    <div className="px-28 py-20">
+    <div className="px-4 xl:px-28 py-20">
       <div className="flex justify-start space-y-8 flex-col">
         <Image
           src={'https://images.ctfassets.net/q8mvene1wzq4/4sC7flJuNRu1wS6K9AmbXD/c17d6cef53f37721c44ce8bc4b668214/home_pinkpaint_lyftup.jpg?q=60'}

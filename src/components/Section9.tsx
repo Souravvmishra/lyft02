@@ -22,7 +22,7 @@ const Section9: React.FC = () => {
   ];
 
   return (
-    <div className="px-28 py-20 overflow-clip -mx-40 bg-[#F4F4FA] ">
+    <div className="xl:px-28 px-4 py-20 overflow-clip -mx-40 bg-[#F4F4FA] ">
       <div className="flex justify-center items-center flex-col space-y-4">
         <div className='flex space-x-2 scale-75 justify-center items-center'>
           {/* <Image src={'http://images.ctfassets.net/q8mvene1wzq4/3WkSLIffcV7OYpUgMpBwJ7/6951147bed1e0844f7eeeb9785cf84ba/Lyft_Business_Pink.svg?w=&q=60&fm='} width={1080} height={250} alt='logo' /> */}

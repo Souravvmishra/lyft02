@@ -150,7 +150,7 @@ const data = [
 
 const Card: React.FC<{ item: typeof data[0] }> = ({ item }) => {
     return (
-        <div className="text-black border flex flex-col  w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 shadow-md cursor-pointer ">
+        <div className="text-black border flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 shadow-md cursor-pointer  ">
             <div className="font-semibold text-xl">{item.title}</div>
             <Image src={item.image}
                 width={150}
@@ -190,8 +190,8 @@ const Section5: React.FC = () => {
     }, [right]);
 
     return (
-        <div className="px-28 py-20 overflow-clip">
-            <div className="flex justify-between">
+        <div className="xl:px-28 px-4  py-20 overflow-clip">
+            <div className="flex xl:justify-between xl:flex-row flex-col items-center justify-center space-y-4">
                 <div>
                     <div className="text-3xl font-semibold">
                         <div>Ride. Bike. Scoot. Go bananas.</div>
@@ -202,7 +202,7 @@ const Section5: React.FC = () => {
                 </div>
                 <div className="flex space-x-6">
                     <button
-                        className="rounded-full scale-90 "
+                        className="rounded-full scale-90 p-4"
                         onClick={() => setRight((r) => r - 18)}
                     >
                         <svg
@@ -217,7 +217,7 @@ const Section5: React.FC = () => {
                     </button>
 
                     <button
-                        className="bg-[#523BE4] hover:bg-[#6854de] rounded-[100%]  text-white px-4 scale-90 "
+                        className="bg-[#523BE4] hover:bg-[#6854de] rounded-[100%]  text-white px-4 scale-90 p-4"
                         onClick={() => setRight((r) => r + 18)}
                     >
                         <svg
@@ -235,13 +235,13 @@ const Section5: React.FC = () => {
             </div>
             <div
                 id="crousel"
-                className={`relative right-0 flex w-[300vw] -mx-20 space-x-4 overflow-auto py-20 transition-all duration-200`}
+                className={`relative right-0 flex w-[300vw] xl:-mx-20 space-x-4 overflow-auto py-20 transition-all duration-200 mx-20`}
             >
                 {data.map((item) => {
                     return <Card item={item} key={item.title} />;
                 })}
             </div>
-            <div className="text-xs opacity-80">
+            <div className="text-xs opacity-80 ">
                 *Availability of bikes, scooters, rentals, ride types, and transit information varies by region.
             </div>
         </div>

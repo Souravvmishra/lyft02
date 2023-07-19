@@ -4,12 +4,12 @@ import BlueBtn from './BlueBtn';
 
 const Section4: React.FC = () => {
   return (
-    <div className='py-20 flex px-28 justify-between items-center space-x-24'>
-      <div className='w-[50%]'>
-        <Image src={'https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
+    <div className=' py-10 md:py-20 flex px-4 md:px-28 justify-between items-center md:space-x-24 flex-col md:flex-row'>
+      <div className='md:w-[50%] my-8'>
+        <Image src={'https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp'} width={3000} height={3500} alt='main' />
       </div>
 
-      <div className='w-[60%] h-[420px]  flex flex-col justify-evenly space-y-4'>
+      <div className='md:w-[60%] md:h-[420px]  flex flex-col justify-evenly space-y-4'>
         <div className='text-3xl font-semibold'>
           We’re rolling out the red carpet
         </div>
