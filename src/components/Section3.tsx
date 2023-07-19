@@ -7,14 +7,13 @@ const Ride: React.FC = () => {
     <div className=' py-20 flex '>
       <div className=' w-[60%] h-[420px] px-28 flex flex-col justify-evenly space-y-4'>
         <div className='text-lg font-semibold'>
-          RIDE WITH LYFT
+        WORKOUT WITH FIT
         </div>
         <div className='text-3xl font-semibold'>
-          Ready, set, go
-          in just a few quick taps
+        Start, sweat, and succeed in just a few quick taps
         </div>
         <div>
-          No matter your destination, we’ll get you where you need to go
+        No matter your goal, we’ll help you achieve it with FIT 
         </div>
         <div className='flex space-x-2'>
           <span data-testid="icon-IconCash" className="sc-18fxrom-0 gjYzMx">
@@ -25,7 +24,7 @@ const Ride: React.FC = () => {
           </span>
           <div>
             <div className='text-base font-semibold'>
-              Get a reliable ride in minutes
+            Get a personalized workout plan in minutes
             </div>
           </div>
         </div>
@@ -38,7 +37,7 @@ const Ride: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Schedule your ride in advance
+            Schedule your sessions in advance
             </div>
           </div>
         </div>
@@ -51,15 +50,15 @@ const Ride: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Earn rewards on every ride
+            Earn rewards on every workout 
             </div>
           </div>
         </div>
 
         <div className='flex space-x-4'>
-          <BlueBtn text={`Get a ride`} />
+          <BlueBtn text={`Get a Call`} />
           <div className='flex space-x-2 justify-center items-center'>
-            <div>Learn more about riding with Lyft</div>
+            <div> Learn more about training with WHG</div>
             <span>
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                 <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z"></path>

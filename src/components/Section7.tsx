@@ -7,7 +7,7 @@ const Section7: React.FC = () => {
     <div className="bg-[#F4F4FA] flex px-48 py-20 justify-between items-center space-x-24 -mx-40">
       <div className="w-[50%]">
         <Image
-          src={'https://images.ctfassets.net/q8mvene1wzq4/3tEhujwTqY4G4LXZ0yZltF/c544aaffe54de76aacce746d9db34d9b/home_pinkpaint_safety.jpg?w=1500&q=60&fm=webp'}
+          src={'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60'}
           width={400}
           height={520}
           alt="main"
@@ -19,8 +19,7 @@ const Section7: React.FC = () => {
 
         <div className="text-3xl font-semibold">Your safety comes first. Always.</div>
         <div>
-          We look out for you before, during, and after every single ride. And we monitor rides to help you get where you
-          need to go. If you ever need it, we’re standing by, ready to help.
+        We care for you before, during, and after every single session. And we monitor your progress to help you achieve your fitness goals. If you ever need it, we’re standing by, ready to help.
         </div>
 
         <div className="flex space-x-4">

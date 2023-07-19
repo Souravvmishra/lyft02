@@ -7,10 +7,10 @@ const Drive: React.FC = () => {
         <div className='-mx-40 bg-[#F4F4FA] py-20 flex '>
             <div className='px-40 w-[60%] h-[420px] flex flex-col justify-evenly space-y-4'>
                 <div className='text-lg font-semibold'>
-                    DRIVE WITH LYFT
+                WORKOUT WITH WHG
                 </div>
                 <div className='text-3xl font-semibold'>
-                    Set your own hours. Earn on your own terms.
+                Achieve your fitness goals. Train on your own terms.
                 </div>
                 <div className='flex space-x-2'>
                     <span data-testid="icon-IconCash" className="sc-18fxrom-0 gjYzMx">
@@ -21,10 +21,10 @@ const Drive: React.FC = () => {
                     </span>
                     <div>
                         <div className='text-base font-semibold'>
-                            Reliable earnings:
+                        Effective results: 
                         </div>
                         <div>
-                            Make money, keep your tips, and cash out when you want.
+                        Burn calories, build muscles, and improve your health.
                         </div>
                     </div>
                 </div>
@@ -37,10 +37,10 @@ const Drive: React.FC = () => {
                     </svg>
                     <div>
                         <div className='text-base font-semibold'>
-                            A flexible schedule:
+                        A flexible routine: 
                         </div>
                         <div>
-                            Be your own boss and drive whenever it works for you.
+                        Be your own coach and workout whenever it suits you.
                         </div>
                     </div>
                 </div>
@@ -51,17 +51,17 @@ const Drive: React.FC = () => {
                     </svg>
                     <div>
                         <div className='text-base font-semibold'>
-                            Get paid instantly:
+                        Get fit instantly:
                         </div>
                         <div>
-                            Cash out your earnings whenever you want.
+                        Access hundreds of exercises and videos whenever you want.
                         </div>
                     </div>
                 </div>
                 <div className='flex space-x-4'>
-                    <BlueBtn text={`Apply to drive`} />
+                    <BlueBtn text={`Apply To Join`} />
                     <div className='flex space-x-2 justify-center items-center'>
-                        <div>How driver pay works</div>
+                        <div>Plans Available</div>
                         <span>
                             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                 <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z"></path>
@@ -70,8 +70,8 @@ const Drive: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[40%]'>
-                <Image src={'https://images.ctfassets.net/q8mvene1wzq4/2qig3wGIPssGl5C9tS0Lrt/f68bb064f872385abc6e95606cb0794e/home_pinkpaint_driver.jpg?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
+            <div className='w-[40%] '>
+                <Image src={'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60'} width={400} height={600} alt='main' />
             </div>
 
         </div>

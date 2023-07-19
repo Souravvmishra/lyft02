@@ -194,10 +194,10 @@ const Section5: React.FC = () => {
             <div className="flex justify-between">
                 <div>
                     <div className="text-3xl font-semibold">
-                        <div>Ride. Bike. Scoot. Go bananas.</div>
+                        <div>Workout. Run. Stretch. Go bananas.</div>
                     </div>
                     <div>
-                        We’ve got options to get you where you’re going. Choose a ride* that suits your mood and budget.
+                    We’ve got options to help you reach your fitness goals. Choose a session* that suits your mood and level.
                     </div>
                 </div>
                 <div className="flex space-x-6">

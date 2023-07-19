@@ -4,22 +4,7 @@ import WhiteBtn from './WhiteBtn';
 import Crousel02 from './Crousel02';
 
 const Section9: React.FC = () => {
-  const items = [
-    'employees',
-    'VIPs',
-    'customers',
-    'ideas',
-    'interviewees',
-    'visitors',
-    'students',
-    'patients',
-    'guests',
-    'essential goods',
-    'prospects',
-    'supplies',
-    'people',
-    'business',
-  ];
+  const items = [ 'trainers', 'members', 'clients', 'goals', 'participants', 'athletes', 'instructors', 'coaches', 'friends', 'equipment', 'exercises', 'programs', 'results', 'fitness', ];
 
   return (
     <div className="px-28 py-20 overflow-clip -mx-40 bg-[#F4F4FA] ">
@@ -48,8 +33,7 @@ const Section9: React.FC = () => {
         <div className="text-3xl font-semibold">We Help Move</div>
         <ListComponent items={items} />
         <div className="py-12 w-[50%] text-center text-slate-800">
-          From affordable transportation solutions to effortless expensing, we’ll help drive your business forward by
-          getting your people where they need to go.
+        From effective training solutions to personalized fitness plans, we’ll help boost your wellness by getting your body where it needs to be.
         </div>
         <div>
           <WhiteBtn text="Learn More" />

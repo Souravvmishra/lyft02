@@ -6,7 +6,7 @@ const Section4: React.FC = () => {
   return (
     <div className='py-20 flex px-28 justify-between items-center space-x-24'>
       <div className='w-[50%]'>
-        <Image src={'https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp'} width={400} height={720} alt='main' />
+        <Image src={'https://plus.unsplash.com/premium_photo-1672783582216-f7b0a370a1f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ1fHx3b3Jrb3V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60'} width={400} height={720} alt='main' />
       </div>
 
       <div className='w-[60%] h-[420px]  flex flex-col justify-evenly space-y-4'>
@@ -14,7 +14,7 @@ const Section4: React.FC = () => {
           We’re rolling out the red carpet
         </div>
         <div>
-          Join the new Lyft Pink to enjoy complimentary upgrades to Priority Pickup, exclusive savings, and preferential pricing on Lux, XL, and Preferred rides. Members save an average of $23/month.
+        Join the new FIT Green to enjoy complimentary upgrades to Priority Booking, exclusive discounts, and preferential pricing on Personal, Group, and Online sessions. Members save an average of ₹1,500/month.
         </div>
         <div className='flex space-x-2'>
           <svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
@@ -22,10 +22,10 @@ const Section4: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Free Priority Pickup upgrades
+            Free Priority Booking upgrades 
             </div>
             <div>
-              Get picked up faster and save $3-4 per ride on average
+            Get your preferred time slot and save ₹200-300 per session on average
             </div>
           </div>
         </div>
@@ -36,10 +36,10 @@ const Section4: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Exclusive savings
+            Exclusive discounts 
             </div>
             <div>
-              Enjoy 5% off on Lux, XL, and Preferred rides
+            Enjoy 10% off on Personal, Group, and Online sessions 
             </div>
           </div>
         </div>
@@ -51,10 +51,10 @@ const Section4: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Cancellation forgiveness
+            Cancellation forgiveness
             </div>
             <div>
-              Cancel up to 3x/month for free
+            Cancel up to 3x/month for free
             </div>
           </div>
         </div>
@@ -65,10 +65,10 @@ const Section4: React.FC = () => {
           </svg>
           <div>
             <div className='text-base font-semibold'>
-              Free Grubhub+ for a year
+            Free Fitbit Premium for a year
             </div>
             <div>
-              $0 restaurant delivery fees
+            Track your fitness progress and get personalized insights
             </div>
           </div>
         </div>
