@@ -4,12 +4,12 @@ import BlueBtn from './BlueBtn';
 
 const Section7: React.FC = () => {
   return (
-    <div className="bg-[#F4F4FA] flex px-4 xl:px-48 py-20 justify-between items-center xl:space-x-24 -mx-40 flex-col space-y-4 xl:flex-row">
+    <div className="bg-[#F4F4FA] flex px-12 xl:px-48 py-20 justify-between items-center xl:space-x-24 -mx-40 flex-col space-y-4 xl:flex-row">
       <div className="xl:w-[50%]">
         <Image
           src={'https://images.ctfassets.net/q8mvene1wzq4/3tEhujwTqY4G4LXZ0yZltF/c544aaffe54de76aacce746d9db34d9b/home_pinkpaint_safety.jpg?w=1500&q=60&fm=webp'}
-          width={400}
-          height={520}
+          width={350}
+          height={250}
           alt="main"
         />
       </div>
