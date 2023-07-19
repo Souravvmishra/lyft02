@@ -2,7 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Dismiss: React.FC = () => {
+interface DismissProps {
+  dark: boolean; // Adjust the type according to the actual type of 'dark'
+}
+
+const Dismiss: React.FC<DismissProps> = ({ dark }) => {
   const remove = () => {
     const dissmissElement = document.querySelector<HTMLElement>('#dissmiss');
     if (dissmissElement) {
@@ -11,7 +15,7 @@ const Dismiss: React.FC = () => {
   };
 
   return (
-    <div id='dissmiss' className='relative text-center h-16 bg-[#E7F6FF] -mx-2 xl:-mx-40  font-semibold flex items-center justify-center group flex-col md:flex-row'>
+    <div id='dissmiss' className={`relative text-center h-16 bg-[#E7F6FF] -mx-2 xl:-mx-40  font-semibold flex items-center justify-center group flex-col md:flex-row ${dark && 'bg-black/80 text-white'} `}>
       We’ve made it easier for you to 
       <a className='underline decoration-[1.5px] pl-2'>get to and from the airport</a>
 
