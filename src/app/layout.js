@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
         {children}
         
-        <div className='-mx-40 h-12 bg-gradient-to-b from-gray-200 to-transparent'></div>
+        <div className='px-2 -mx-2 xl:-mx-40 h-12 bg-gradient-to-b from-gray-200 to-transparent'></div>
         <Footer />
 
       </body>

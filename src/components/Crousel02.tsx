@@ -50,7 +50,7 @@ const Crousel02: React.FC = () => {
     <div className='overflow-x-hidden'>
       <div
         id="crousel02"
-        className={`relative right-0 overflow-hidden flex w-[800vw] py-20 space-x-4 transition-all duration-300 -mx-40 px-80`}
+        className={`px-2 -mx-2 relative right-0 overflow-hidden flex w-[800vw] py-20 space-x-4 transition-all duration-300 xl:-mx-40 xl:px-80`}
       >
         {data.map((item, index) => (
           <div key={index} className='w-44 h-44 overflow-hidden'>
