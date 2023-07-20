@@ -1,10 +1,8 @@
-'use client'
 
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,11 +14,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  const [dark, setDark] = useState(true)
-
-  useEffect(() =>{
-    localStorage.getItem('dark') === 'true' ? setDark(true) : setDark(false)
-  }, )
   return (
     <html lang="en" className='dark '>
       <body className={`${inter.className} w-screen box-border px-2  overflow-x-hidden ${dark && 'bg-black/80 text-white dark:bg-black'} `}>
