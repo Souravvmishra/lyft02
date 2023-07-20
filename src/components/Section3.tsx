@@ -2,15 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import BlueBtn from './BlueBtn';
 
-interface Props {
-  dark: boolean; // Adjust the type according to the actual type of 'dark'
-}
 
 
-const Ride: React.FC<Props> = ({dark}) => {
+const Ride: React.FC = ({}) => {
   return (
-    <div className={`py-20 flex items-center justify-center flex-col-reverse md:flex-row ${dark && 'bg-black/80 text-white'} `}>
-      <div className=' md:w-[60%] h-[420px] px-4 md:px-28 flex flex-col justify-evenly space-y-4'>
+    <div className={`py-20 flex items-center justify-center flex-col-reverse md:flex-row xl:px-40 px-4 dark:bg-gray-600 dark:text-white -mx-2 `}>
+      <div className=' md:w-[60%] h-[420px] px-4  flex flex-col justify-evenly space-y-4'>
         <div className='text-lg font-semibold text-center'>
           RIDE WITH LYFT
         </div>

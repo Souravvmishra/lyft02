@@ -4,12 +4,8 @@ import WhiteBtn from './WhiteBtn';
 import Crousel02 from './Crousel02';
 
 
-interface Props {
-  dark: boolean; // Adjust the type according to the actual type of 'dark'
-}
 
-
-const Section9: React.FC<Props> = ({dark}) => {
+const Section9: React.FC = ({}) => {
   const items = [
     'employees',
     'VIPs',
@@ -28,7 +24,7 @@ const Section9: React.FC<Props> = ({dark}) => {
   ];
 
   return (
-    <div className={ `px-2 -mx-2 xl:px-28  py-20 overflow-clip xl:-mx-40 bg-[#F4F4FA] ${dark && 'bg-gray-600 text-white'} `}>
+    <div className={ `px-4  -mx-2 xl:px-40  py-20 overflow-clip bg-[#F4F4FA] dark:bg-gray-600 dark:text-white `}>
       <div className="flex justify-center items-center flex-col space-y-4">
         <div className='flex space-x-2 scale-75 justify-center items-center'>
           {/* <Image src={'http://images.ctfassets.net/q8mvene1wzq4/3WkSLIffcV7OYpUgMpBwJ7/6951147bed1e0844f7eeeb9785cf84ba/Lyft_Business_Pink.svg?w=&q=60&fm='} width={1080} height={250} alt='logo' /> */}

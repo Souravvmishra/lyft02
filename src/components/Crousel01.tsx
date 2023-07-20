@@ -73,7 +73,7 @@ const Crousel01: React.FC = () => {
 
 
     return (
-        <div className='py-20'>
+        <div className='py-20 px-4 -mx-2 xl:px-40 dark:bg-black/80 dark:text-white'>
             <Slide slidesToScroll={1} slidesToShow={slides} indicators={true} transitionDuration={300} cssClass='mx-12' onChange={(from, to) => { setActive(to) }}>
                 {drivers.map((item, i) => {
                     return (

@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 }, [])
 
   return (
-    <div className=' px-4 xl:mx-40 py-10'>
+    <div className=' px-4 xl: -mx-2 xl:px-40 py-10 dark:bg-gray-500 dark:text-white'>
       <div className='flex justify-between flex-col xl:flex-row '>
         <div>
           <div className='flex justify-between items-center pb-8 mb-4 border-b-2 xl:border-b-0 ' onClick={() => setDriver(!driver)}>

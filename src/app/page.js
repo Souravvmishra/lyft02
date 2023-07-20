@@ -20,23 +20,19 @@ export default function Home() {
   return (
     <>
       <button onClick={() => {
-        if (localStorage.getItem('dark') === 'true') {
-          localStorage.setItem('dark', 'false')
-        }else{
-          localStorage.setItem('dark', 'true')
-        }
-        setDark(!dark)}} className='fixed z-50 bottom-14 right-14'><Image src={'https://www.svgrepo.com/show/432159/dark.svg'} width={50} height={50} alt='dark mode' className='bg-white p-2 rounded-full' /></button>
-      <Dissmiss dark = {dark} />
+        document.getElementsByTagName('html')[0].classList.toggle('dark')
+      }} className='fixed z-50 bottom-14 right-14  '><Image src={'https://www.svgrepo.com/show/432159/dark.svg'} width={50} height={50} alt='dark mode' className='bg-white p-2 rounded-full' /></button>
+      <Dissmiss />
       <Landing />
-      <Drive  dark = {dark}  />
+      <Drive />
       <Crousel01 />
-      <Ride dark = {dark}/>
-      <Section4 dark = {dark}/>
+      <Ride />
+      <Section4 />
       <Section5 />
       <Section6 />
-      <Section7 dark = {dark} />
+      <Section7 />
       <Section8 />
-      <Section9  dark = {dark} />
+      <Section9 />
     </>
   )
 }

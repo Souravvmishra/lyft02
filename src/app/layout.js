@@ -22,13 +22,13 @@ export default function RootLayout({ children }) {
     localStorage.getItem('dark') === 'true' ? setDark(true) : setDark(false)
   }, )
   return (
-    <html lang="en">
-      <body className={`${inter.className} w-screen box-border px-2 xl:px-40 overflow-x-hidden ${dark && 'bg-black/80 text-white'} `}>
+    <html lang="en" className='dark '>
+      <body className={`${inter.className} w-screen box-border px-2  overflow-x-hidden ${dark && 'bg-black/80 text-white dark:bg-black'} `}>
         <Navbar />
 
         {children}
         
-        <div className='px-2 -mx-2 xl:-mx-40 h-12 bg-gradient-to-b from-gray-200 to-transparent'></div>
+        <div className='px-2 -mx-2 xl:-mx-40 h-12 bg-gradient-to-b from-gray-200 to-transparent dark:from-black dark:to-black/50'></div>
         <Footer />
 
       </body>

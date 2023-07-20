@@ -2,14 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import BlueBtn from './BlueBtn';
 
-interface Props {
-  dark: boolean; // Adjust the type according to the actual type of 'dark'
-}
 
-
-const Section7: React.FC<Props> = ({dark}) => {
+const Section7: React.FC = ({}) => {
   return (
-    <div className={`bg-[#F4F4FA] flex px-4 -mx-2 xl:px-48 py-20 justify-between items-center xl:space-x-24 xl:-mx-40 flex-col space-y-4 xl:flex-row ${dark && 'bg-gray-600 text-white'} `}>
+    <div className={`bg-[#F4F4FA] flex px-4 -mx-2 xl:px-40 py-20 justify-between items-center xl:space-x-24  flex-col space-y-4 xl:flex-row  dark:bg-gray-600 dark:text-white`}>
       <div className="xl:w-[50%]">
         <Image
           src={'https://images.ctfassets.net/q8mvene1wzq4/3tEhujwTqY4G4LXZ0yZltF/c544aaffe54de76aacce746d9db34d9b/home_pinkpaint_safety.jpg?w=1500&q=60&fm=webp'}

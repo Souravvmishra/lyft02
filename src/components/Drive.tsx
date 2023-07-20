@@ -2,15 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import BlueBtn from './BlueBtn';
 
-interface Props {
-    dark: boolean; // Adjust the type according to the actual type of 'dark'
-  }
 
-
-const Drive: React.FC<Props> = ({dark}) => {
+const Drive: React.FC = () => {
     return (
-        <div className={`xl:-mx-40 bg-[#F4F4FA] py-20 flex flex-col-reverse xl:flex-row px-4 -mx-2 ${dark && 'bg-gray-600 text-white'} `}>
-            <div className='xl:px-40 xl:w-[60%] xl:h-[420px] flex flex-col justify-evenly space-y-4'>
+        <div className={` bg-[#F4F4FA] py-20 flex flex-col-reverse xl:flex-row px-4 -mx-2 xl:px-40 dark:bg-gray-600 dark:text-white`}>
+            <div className=' xl:w-[60%] xl:h-[420px] flex flex-col justify-evenly space-y-4'>
                 <div className='text-lg font-semibold text-center'>
                     DRIVE WITH LYFT
                 </div>

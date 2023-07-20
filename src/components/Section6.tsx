@@ -5,7 +5,7 @@ interface Section6Props {}
 
 const Section6: FC<Section6Props> = () => {
     return (
-      <div className="px-4 -mx-2 bg-[#DCDCFF] xl:-mx-40 xl:px-52 py-8 flex justify-between items-center flex-col space-y-4 xl:flex-row">
+      <div className="  bg-[#DCDCFF]  xl:px-40 px-4 -mx-2 py-8 flex justify-between items-center flex-col space-y-4 xl:flex-row">
         <div className="flex flex-col text-2xl font-semibold">
           <div>Ready to roll?</div>
           <div>Get an estimate.</div>

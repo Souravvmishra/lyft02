@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ item }) => {
   return (
-    <div className="text-black flex flex-col w-44 h-44 px-6 rounded-xl items-center justify-center space-y-4">
+    <div className="text-black flex flex-col w-44 h-44  p-4 rounded-xl items-center justify-center space-y-4">
       <Image src={item} width={150} height={175} alt="brand" />
     </div>
   );
@@ -47,13 +47,13 @@ const Crousel02: React.FC = () => {
   }, [right]);
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden xl:px-40 px-4  -mx-2 dark:bg-gray-600 dark:text-white'>
       <div
         id="crousel02"
-        className={`px-2 -mx-2 relative right-0 overflow-hidden flex w-[800vw] py-20 space-x-4 transition-all duration-300 xl:-mx-40 xl:px-80`}
+        className={`px-2 -mx-2 relative right-0 overflow-hidden flex w-[800vw] py-20 space-x-4 transition-all duration-300 `}
       >
         {data.map((item, index) => (
-          <div key={index} className='w-44 h-44 overflow-hidden'>
+          <div key={index} className='w-44 h-44 xl:h-56 xl:w-56 overflow-hidden'>
             <Card item={item} />
           </div>
         ))}

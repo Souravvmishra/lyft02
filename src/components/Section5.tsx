@@ -150,7 +150,7 @@ const data = [
 
 const Card: React.FC<{ item: typeof data[0] }> = ({ item }) => {
     return (
-        <div className="text-black border flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 shadow-md cursor-pointer  ">
+        <div className="text-black border flex flex-col w-72 h-72 px-6 rounded-xl items-center justify-center space-y-4 shadow-md cursor-pointer dark:bg-gray-500 dark:text-white ">
             <div className="font-semibold text-xl">{item.title}</div>
             <Image src={item.image}
                 width={150}
@@ -160,11 +160,11 @@ const Card: React.FC<{ item: typeof data[0] }> = ({ item }) => {
             <div className="flex flex-col text-sm text-slate-500 space-y-1">
                 <div className="flex space-x-1">
                     {<item.svg1 />}
-                    <span>{item.text1}</span>
+                    <span className='dark:text-white'>{item.text1}</span>
                 </div>
                 <div className="flex space-x-1">
                     {<item.svg2 />}
-                    <span>{item.text2}</span>
+                    <span className='dark:text-white'>{item.text2}</span>
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@ const Section5: React.FC = () => {
     }, [right]);
 
     return (
-        <div className="xl:px-28 px-4  py-20 overflow-clip">
+        <div className="xl:px-40 px-4 -mx-2 dark:bg-black/80 dark:text-white  py-20 overflow-clip">
             <div className="flex xl:justify-between xl:flex-row flex-col items-center justify-center space-y-4">
                 <div>
                     <div className="text-3xl font-semibold">
@@ -235,7 +235,7 @@ const Section5: React.FC = () => {
             </div>
             <div
                 id="crousel"
-                className={`relative right-0 flex w-[300vw] xl:-mx-20 space-x-4 overflow-auto py-20 transition-all duration-200 mx-20`}
+                className={`relative right-0 flex w-[300vw] xl:mx-20 space-x-4 overflow-auto py-20 transition-all duration-200 mx-40`}
             >
                 {data.map((item) => {
                     return <Card item={item} key={item.title} />;
