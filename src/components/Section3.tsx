@@ -7,7 +7,7 @@ import BlueBtn from './BlueBtn';
 const Ride: React.FC = ({}) => {
   return (
     <div className={`py-20 flex items-center justify-center flex-col-reverse md:flex-row xl:px-40 px-4 dark:bg-gray-600 dark:text-white -mx-2 `}>
-      <div className=' md:w-[60%] h-[420px] px-4  flex flex-col justify-evenly space-y-4'>
+      <div className=' md:w-[60%] h-[420px] px-4  flex flex-col justify-evenly items-start space-y-4'>
         <div className='text-lg font-semibold text-center'>
           RIDE WITH LYFT
         </div>
@@ -64,7 +64,8 @@ const Ride: React.FC = ({}) => {
             <div className=''>Learn more about riding with Lyft</div>
             <span>
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z"></path>
+                <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z">
+                </path>
               </svg>
             </span>
           </div>
