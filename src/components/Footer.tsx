@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
             );
           })}
         </div>
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center xl:justify-start'>
           <div className='mb-4'>
             <button className='w-36 px-2 rounded-full border text-black border-black py-1 hover:bg-slate-200'>
               Lyft driver app

@@ -58,10 +58,10 @@ const Ride: React.FC = ({}) => {
           </div>
         </div>
 
-        <div className='flex space-x-4 flex-col md:flex-row'>
+        <div className='flex space-x-4 flex-col md:flex-row items-center justify-start'>
           <BlueBtn text={`Get a ride`} />
           <div className='flex space-x-2 justify-center items-center'>
-            <div className='mt-4'>Learn more about riding with Lyft</div>
+            <div className=''>Learn more about riding with Lyft</div>
             <span>
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                 <path d="M9.652 2.65 8.426 3.876l3.258 3.258H1v1.728h10.684L8.426 12.12l1.226 1.226L15 7.998 9.652 2.65Z"></path>
