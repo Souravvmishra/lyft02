@@ -11,8 +11,8 @@ const Ride: React.FC = ({}) => {
         <div className='text-lg font-semibold text-center'>
           RIDE WITH LYFT
         </div>
-        <div className='text-3xl font-semibold text-center'>
-          Ready, set, go
+        <div className='text-3xl text-left font-semibold '>
+          Ready, set, go <br />
           in just a few quick taps
         </div>
         <div>
